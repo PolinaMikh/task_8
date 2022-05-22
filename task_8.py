@@ -12,6 +12,3 @@ with open('id.txt') as f:
 for id in vk.friends.get(user_id=user_id)['items']:
     user = vk.users.get(user_ids=id)[0]
     print(user['first_name'], user['last_name'])
-
-
-
